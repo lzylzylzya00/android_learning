@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="155dp">
+
+        <CheckBox
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/ad_goods_checkbox"
+            android:button="@drawable/checkbox_bg_color"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/ad_news_image0"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/fengjing1"
+            android:layout_marginLeft="12dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <TextView
+                android:lineSpacingMultiplier="1.2"
+                android:textSize="16sp"
+                android:text="这是一副很不错的物品，专业靠谱，值得一看"
+                android:textColor="@color/news_title_color"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/tag1" />
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:background="#f46d43"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="3dp"
+                    android:id="@+id/ad_news_postfrom"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:text="标签Tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/tag2"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:background="#f46d43"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="2dp"
+                    android:id="@+id/ad_news_views"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:text="标签Tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/ad_goods_price"
+                    android:layout_weight="1"
+                    android:textColor="#ff0000"
+                    android:layout_gravity="center_vertical"
+                    android:text="价格：78.8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <LinearLayout
+                    android:background="@drawable/listview_item_number_bg_color"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp">
+
+                    <TextView
+                        android:id="@+id/ad_goods_minus"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:text="-"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:background="#d0d0d0"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/ad_goods_edit"
+                        android:gravity="center"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"/>
+
+                    <View
+                        android:background="#d0d0d0"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/ad_goods_add"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="+"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/ad_news_line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

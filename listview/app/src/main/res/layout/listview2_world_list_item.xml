@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="16sp"
+        android:text="干得漂亮！这里是一个纯文字的标题"
+        android:textColor="@color/news_title_color"
+        android:id="@+id/ad_news_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:lineSpacingMultiplier="1.4"
+        android:textSize="12sp"
+        android:text="这里是一个纯文字的标题的简介部分内容，这里是一个纯文字的标题的简介部分内容，这里是一个纯文字的标题的简介部分内容，这里是一个纯文字的标题的简介部分内容，"
+        android:textColor="@color/news_description_color"
+        android:id="@+id/ad_news_description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/from"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+        <TextView
+            android:paddingLeft="3dp"
+            android:id="@+id/ad_news_postfrom"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="来自于 平台3"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/eyes_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:paddingLeft="2dp"
+            android:id="@+id/ad_news_views"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="阅读(79999)"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/ad_news_line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

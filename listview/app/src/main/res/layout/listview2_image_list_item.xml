@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="16sp"
+        android:text="干得漂亮！这是三个图片的标题"
+        android:textColor="@color/news_title_color"
+        android:id="@+id/ad_news_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:background="@drawable/jianzhu1"
+            android:id="@+id/ad_news_image0"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_width="105dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:background="@drawable/fengjing2"
+            android:id="@+id/ad_news_image1"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_width="105dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:background="@drawable/android1"
+            android:id="@+id/ad_news_image2"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_width="105dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/from"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+        <TextView
+            android:paddingLeft="3dp"
+            android:id="@+id/ad_news_postfrom"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="来自于 平台2"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/eyes_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:paddingLeft="2dp"
+            android:id="@+id/ad_news_views"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="阅读(79999)"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/ad_news_line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
