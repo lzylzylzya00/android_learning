@@ -68,7 +68,7 @@ public class ListView2Activity extends AppCompatActivity {
             datas.add(newsBean);
         }
 
-        listView1Adapter.notifyDataSetChanged();
+      //  listView1Adapter.notifyDataSetChanged();
 
     }
 }

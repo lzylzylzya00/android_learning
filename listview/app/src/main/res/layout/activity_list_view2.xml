@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="列表视图ListView（下）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/lv_3"
+        android:listSelector="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:background="#dfdfdf"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_summer"
+            android:textSize="18sp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            android:layout_gravity="center_vertical"
+            android:text="总计：0 "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+        <Button
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_xmlbg_pressed"
+            android:text="确 定"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

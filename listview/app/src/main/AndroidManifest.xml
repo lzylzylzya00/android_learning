@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ListView"
         tools:targetApi="31">
         <activity
+            android:name=".ListViewActivity3"
+            android:exported="false" />
+        <activity
             android:name=".bean.ListView3Activity"
             android:exported="false" />
         <activity

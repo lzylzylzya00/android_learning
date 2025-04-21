@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_listview_two){
             listView2Activity();
         }
+        
+        if (v.getId() == R.id.btn_listview_three){
+            listView3Activity();
+        }
+
 
     }
 
@@ -51,5 +56,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void listView2Activity(){
         Intent listView2Itent = new Intent(this, ListView2Activity.class);
         startActivity(listView2Itent);
+    }
+
+    private void listView3Activity(){
+        Intent listView3Itent = new Intent(this, ListViewActivity3.class);
+        startActivity(listView3Itent);
     }
 }
