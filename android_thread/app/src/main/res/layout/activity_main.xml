@@ -25,6 +25,13 @@
         android:id="@+id/btnHandlerDemo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Handler示例3"/>
+        android:text="Handler示例3"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAsyncTaskDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AsyncTask示例"/>
 
 </LinearLayout>

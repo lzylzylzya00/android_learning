@@ -30,6 +30,9 @@
         <activity
             android:name=".Handler3Activity"
             android:exported="false" />
+        <activity
+            android:name=".AsyncTaskActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
