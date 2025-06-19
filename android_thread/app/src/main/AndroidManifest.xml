@@ -24,6 +24,12 @@
         <activity
             android:name=".HandlerActivity"
             android:exported="false" />
+        <activity
+            android:name=".HandlerActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Handler3Activity"
+            android:exported="false" />
     </application>
 
 </manifest>

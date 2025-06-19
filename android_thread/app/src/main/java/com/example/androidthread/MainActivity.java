@@ -28,5 +28,17 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, HandlerActivity.class);
             startActivity(intent);
         });
+        
+        Button btnHandlerDemo2 = findViewById(R.id.btnHandlerDemo2);
+        btnHandlerDemo2.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, HandlerActivity2.class);
+            startActivity(intent);
+        });
+        
+        Button btnHandlerDemo3 = findViewById(R.id.btnHandlerDemo3);
+        btnHandlerDemo3.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Handler3Activity.class);
+            startActivity(intent);
+        });
     }
 }
