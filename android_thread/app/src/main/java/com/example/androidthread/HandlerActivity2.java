@@ -50,6 +50,7 @@ public class HandlerActivity2 extends AppCompatActivity {
         startButton2 = findViewById(R.id.startButton2);
 
 
+
         // 步骤1：在主线程中 通过匿名内部类 创建Handler类对象
         mHandler = new Handler(){
 

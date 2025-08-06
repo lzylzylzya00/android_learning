@@ -33,6 +33,9 @@
         <activity
             android:name=".AsyncTaskActivity"
             android:exported="false" />
+        <activity
+            android:name=".HandlerThtreadActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

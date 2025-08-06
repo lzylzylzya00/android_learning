@@ -46,5 +46,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, AsyncTaskActivity.class);
             startActivity(intent);
         });
+
+        Button btnHandlerThread = findViewById(R.id.btnHandlerThread);
+        btnHandlerThread.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, HandlerThtreadActivity.class);
+            startActivity(intent);
+        });
     }
 }
