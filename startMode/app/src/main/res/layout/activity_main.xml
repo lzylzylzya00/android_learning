@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btn_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch StandardActivity" />
+
+    <Button
+        android:id="@+id/btn_single_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch SingleTopActivity" />
+
+    <Button
+        android:id="@+id/btn_single_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch SingleTaskActivity" />
+
+    <Button
+        android:id="@+id/btn_single_instance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch SingleInstanceActivity" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btn_new_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLAG_ACTIVITY_NEW_TASK" />
+
+        <Button
+            android:id="@+id/btn_clear_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLAG_ACTIVITY_CLEAR_TOP" />
+
+        <Button
+            android:id="@+id/btn_single_top_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLAG_ACTIVITY_SINGLE_TOP" />
+
+        <Button
+            android:id="@+id/btn_clear_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLAG_ACTIVITY_CLEAR_TASK + NEW_TASK\n(跳转到 LoginActivity)" />
+
+        <Button
+            android:id="@+id/btn_no_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLAG_ACTIVITY_NO_HISTORY" />
+
+
+        <!-- ... 原有按钮 ... -->
+
+        <Button
+            android:id="@+id/btn_new_task_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEW_TASK + Standard (hashCode 变)" />
+
+        <Button
+            android:id="@+id/btn_new_task_single_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEW_TASK + SingleTask (hashCode 不变)" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_to_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to A" />
+
+</LinearLayout>

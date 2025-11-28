@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.StartMode">
+
+        <!-- 主界面 -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Standard 模式（默认，可不写） -->
+        <activity android:name=".StandardActivity" />
+
+        <!-- singleTop -->
+        <activity
+            android:name=".SingleTopActivity"
+            android:launchMode="singleTop" />
+
+        <!-- singleTask -->
+        <activity
+            android:name=".SingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.task.singleTask" />
+
+        <!-- singleInstance -->
+        <activity
+            android:name=".SingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.example.task.singleInstance" />
+
+
+
+        <activity android:name=".TargetActivity"
+            android:taskAffinity="com.example.demo.newtask"
+            />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AActivity"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".BActivity" />
+
+        <activity
+            android:name=".SingleTaskTargetActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.demo.singletask" />
+
+    </application>
+</manifest>

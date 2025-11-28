@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ import java.lang.ref.WeakReference;
  * desc:
  */
 public class HandlerThtreadActivity extends Activity {
+
+    private static final String TAG = HandlerThtreadActivity.class.getSimpleName();
 
     static Handler mainHandler;
     private static Handler workHandler;
@@ -43,7 +46,7 @@ public class HandlerThtreadActivity extends Activity {
          * 步骤1：创建HandlerThread实例对象
          * 传入参数 = 线程名字，作用 = 标记该线程
          */
-        mHandlerThread = new HandlerThread("handlerThread");
+        mHandlerThread = new HandlerThread("handlerThread--LZY");
 
         /**
          * 步骤2：启动线程
@@ -128,6 +131,7 @@ public class HandlerThtreadActivity extends Activity {
                 case 1:
                     try {
                         //延时操作
+                        Log.d(TAG, "handleMessage: " + Thread.currentThread().getName());  // 这个handler是在 handlerThread线程中执行的
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -169,6 +173,10 @@ public class HandlerThtreadActivity extends Activity {
 
         if (workHandler != null){
             workHandler.removeCallbacksAndMessages(null);
+        }
+
+        if (mainHandler != null){
+            mainHandler.removeCallbacksAndMessages(null);
         }
 
         if (mHandlerThread != null){
